@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="HTML, CSS">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keyword" content="HTML, CSS" />
 
     <title>Üheleheline õppeveeb</title>
-   
+    <link rel="stylesheet" href="CSS/styles.css" />
   </head>
+
   <body>
-    <img src="images/frieren.png" alt="profile picture" />
-    <p class="username">Gerda Kadi</p>
-   <p>Just created my first web page!</p>
+    <!-- Header -->
+    <header>
+      <section id="hero">
+        <img src="images/hero.jpg" alt="Õppeveebi kangelaspilt" />
+        <div class="hero-text">
+          <h1>Minu Esimene Veebileht</h1>
+          <nav aria-label="Põhinavigatsioon">
+            <a href="#about">Minust</a>
+            <a href="#projects">Projektid</a>
+            <a href="#contact">Kontakt</a>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <!-- About -->
+      <section id="about">
+        <h2>Minust</h2>
+        <img src="images/frieren.png" alt="profile picture" />
+        <p class="username">Gerda Kadi</p>
+        <p>Tartu Rakendusliku Kolledži õpilane</p>
+      </section>
+
+      <!-- Projects/Links -->
+      <section id="projects">
+        <h2>Projektid</h2>
+
+        <div class="projects-container">
+          <div class="projects-item">
+            <a
+              href="https://gerdakadiauli08.wixsite.com/gerda-kadi-auli/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="images/portfoolio.jpg"
+                alt="Portfoolio pilt"
+                loading="lazy"
+              />
+            </a>
+            <h3>Portfoolio</h3>
+          </div>
+
+          <div class="projects-item">
+            <a href="link2" target="_blank" rel="noopener noreferrer">
+              <img src="images/LINK2.jpg" alt="ava link" loading="lazy" />
+            </a>
+            <h3>Link2</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--Video-->
+      <section id="media">
+        <video
+          controls
+          width="640"
+          height="360"
+          poster="images/video-cover.jpg"
+        >
+          <source src="videos/video.MP4" type="video/mp4" />
+      
+        </video>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Email: gerda-kadi.auli@voco.com</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Gerda Kadi</p>
+    </footer>
   </body>
 </html>
