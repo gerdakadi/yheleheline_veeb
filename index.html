@@ -3,23 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keyword" content="HTML, CSS" />
+    <meta name="keywords" content="HTML, CSS" />
 
-    <title>Üheleheline õppeveeb</title>
+    <title>Studypage: home</title>
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/projects.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
       <section id="hero">
-        <img src="images/hero.jpg" alt="Õppeveebi kangelaspilt" />
+        <img src="images/hero.jpg" alt="Hero image" loading="lazy"/>
         <div class="hero-text">
-          <h1>Minu Esimene Veebileht</h1>
+          <h1>my first website</h1>
+          <h1>──── ୨୧ ────</h1>
           <nav aria-label="Põhinavigatsioon">
-            <a href="#about">Minust</a>
-            <a href="#projects">Projektid</a>
-            <a href="#contact">Kontakt</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </nav>
         </div>
       </section>
@@ -27,18 +29,64 @@
 
     <!-- Main content -->
     <main>
-      <!-- About -->
+      
+
+      <!--HTML-->
+      <section id="html">
+        <h2>Learning HTML</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+<div class="media-grid"> 
+    <!--Video-->
+      <section id="video">
+        <div class="video-container">
+          <video
+            controls poster="images/video-cover.jpg"
+          >
+            <source src="videos/video.mp4" type="video/mp4" />
+            <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English" default />
+            Your browser does not support the video.
+          </video>
+          <!--Video Text-->
+          <div class="video-text">
+            <p>
+              “They say that the best blaze burns brightest, when circumstances
+              are at their worst.”
+            </p>
+            <p>- Howl's Moving Castle</p>
+          </div>
+        </div>
+      </section>
+      <section id="extra-content">
+        <h2>Extra</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.  </p>
+      </section>
+      </div>
+
+
+<!-- about me and projects -->
+      <div class="section-row">
+
+<!-- About -->
       <section id="about">
-        <h2>Minust</h2>
-        <img src="images/frieren.png" alt="profile picture" />
-        <p class="username">Gerda Kadi</p>
-        <p>Tartu Rakendusliku Kolledži õpilane</p>
+        <h2>About me ᯓ★</h2>
+        <img src="images/frieren.png" alt="profile picture" loading="lazy"/>
+        <p class="username">Gerda Kadi Auli</p>
+        <p>Student of Tartu Rakendusliku Kolledž</p>
       </section>
 
       <!-- Projects/Links -->
       <section id="projects">
-        <h2>Projektid</h2>
-
+        <h2>Projects ᯓ★</h2>
         <div class="projects-container">
           <div class="projects-item">
             <a
@@ -48,45 +96,45 @@
             >
               <img
                 src="images/portfoolio.jpg"
-                alt="Portfoolio pilt"
+                alt="Portfolio image"
                 loading="lazy"
               />
             </a>
-            <h3>Portfoolio</h3>
+            <h3>Portfolio</h3>
           </div>
 
           <div class="projects-item">
-            <a href="link2" target="_blank" rel="noopener noreferrer">
-              <img src="images/LINK2.jpg" alt="ava link" loading="lazy" />
+            <a href="study.html">
+              <img src="images/study.jpg" alt="ava link" loading="lazy" />
             </a>
-            <h3>Link2</h3>
+            <h3>Study</h3>
           </div>
         </div>
       </section>
+</div>
 
-      <!--Video-->
-      <section id="media">
-        <video
-          controls
-          width="640"
-          height="360"
-          poster="images/video-cover.jpg"
-        >
-          <source src="videos/video.MP4" type="video/mp4" />
-      
-        </video>
-      </section>
+     
 
       <!-- Contact -->
-      <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Email: gerda-kadi.auli@voco.com</p>
-      </section>
+    <section id="contact">
+  <h2>Contact Me ⭑.ᐟ</h2>
+
+  <div class="email-box">
+
+    <!-- inline SVG -->
+    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Email icon">
+      <rect width="24" height="24" fill="none"/>
+      <path d="M2 4h20v16H2z" stroke="black" fill="none"/>
+      <path d="M2 4l10 8 10-8" stroke="black" fill="none"/>
+    </svg>
+    <span>Email: gerda-kadi.auli@voco.com</span>
+  </div>
+</section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <p>© 2025 Gerda Kadi</p>
+      <p>© 2025 Gerda Kadi Auli</p>
     </footer>
   </body>
 </html>

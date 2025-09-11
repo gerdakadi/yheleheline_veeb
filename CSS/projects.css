@@ -1,0 +1,26 @@
+.projects-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center; /* centers items horizontally */
+}
+
+.projects-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.projects-item img {
+  width: 110px;
+  border-radius: 10%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: block;
+}
+.projects-item img:hover {
+  transform: scale(1.1); /* slight zoom */
+  filter: brightness(1.1); /* slightly brighter */
+}
+#projects {
+    width: 50%;
+}

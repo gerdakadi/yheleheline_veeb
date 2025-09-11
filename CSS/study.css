@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* makes it stay in place */
+  background-repeat: no-repeat;
+  padding-top: 40px;
+}
+.back-link {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  padding: 8px 12px; /* space inside the button */
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease; /* smooth hover effect */
+}
+.back-link:hover {
+  background: rgba(0, 0, 0, 0.7); /* dark background on hover */
+  color: white; /* text color changes */
+  transform: scale(1.05); /* slightly bigger */
+}
+section {
+  background-color: rgba(255, 255, 255, 0.85); /* white with transparency */
+  padding: 80px 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  border: 1px solid#ccc;
+}
+
+section {
+  padding: 15px;
+}
