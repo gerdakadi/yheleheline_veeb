@@ -11,13 +11,15 @@
   </head>
 
   <body>
+    <!-- Skip link -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Header -->
     <header>
       <section id="hero">
-        <img src="images/hero.jpg" alt="Hero image" loading="lazy"/>
+        <img src="images/hero.jpg" alt="Hero image" loading="lazy" />
+
         <div class="hero-text">
           <h1>my first website</h1>
-          <h1>──── ୨୧ ────</h1>
           <nav aria-label="Põhinavigatsioon">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -28,108 +30,122 @@
     </header>
 
     <!-- Main content -->
-    <main>
-      
-
+    <main id="main-content">
       <!--HTML-->
       <section id="html">
-        <h2>Learning HTML</h2>
+        <h2>What is HTML</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          HTML (HyperText Markup Language) is the language used to create webpages. It tells a web browser what content to show and how to organize it.
+HTML uses tags like &lt;h1&gt;, &lt;p&gt; &lt;img&gt;, and &lt;a&gt; to structure text, images, and links.
+It’s not a programming language — it describes content.
+Every webpage you see on the internet is built with HTML at its core, often combined with CSS (for styling) and JavaScript (for interactivity).
         </p>
+        <h2>What i learned</h2>
+        <p>
+What I Learned
+Building my first website taught me a lot about how HTML and CSS work together. With HTML, I learned to add different types of content, like headings, text, images, links, and a video. I also created two pages and connected them with links, which made my site more dynamic.</p>
+<p>With CSS, I styled my site by changing fonts, adjusting colors, and adding a background image. I used flexbox to organize sections neatly, experimented with hover effects for interactivity, and made sure the site looks good on smaller screens.</p>
+<p>In the end, I realized that HTML is like the skeleton of a website, while CSS is the skin and style that makes it visually attractive and user-friendly.</p>
       </section>
 
-<div class="media-grid"> 
-    <!--Video-->
-      <section id="video">
-        <div class="video-container">
-          <video
-            controls poster="images/video-cover.jpg"
-          >
-            <source src="videos/video.mp4" type="video/mp4" />
-            <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English" default />
-            Your browser does not support the video.
-          </video>
-          <!--Video Text-->
-          <div class="video-text">
-            <p>
-              “They say that the best blaze burns brightest, when circumstances
-              are at their worst.”
-            </p>
-            <p>- Howl's Moving Castle</p>
+      <div class="media-grid">
+        <!--Video-->
+        <section id="video">
+          <div class="video-container">
+            <video controls poster="images/video-cover.jpg">
+              <source src="videos/video.mp4" type="video/mp4" />
+              <track
+                src="subtitles.vtt"
+                kind="subtitles"
+                srclang="en"
+                label="English"
+                default
+              /> 
+              Your browser does not support the video.
+            </video>
+            <!--Video Text-->
+            <div class="video-text">
+              <p>
+                “They say that the best blaze burns brightest, when
+                circumstances are at their worst.”
+              </p>
+              <p>- Howl's Moving Castle</p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section id="extra-content">
-        <h2>Extra</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.  </p>
-      </section>
+        </section>
+        <!--Extra content-->
+        <section id="extra-content">
+          <h2>Concept</h2>
+          <p>
+            
+
+
+I used HTML to create the basic structure and content of my website. Elements like &lt;h1&gt;, &lt;p&gt;, &lt;img&gt;, &lt;a&gt;, and &lt;video&gt; allowed me to add titles, paragraphs, images, links, and multimedia. I organized content into &lt;section&gt; blocks and used &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; to make the layout clear and easy to follow. I even added a skip link to improve accessibility and navigation. By linking two HTML pages together, I learned how to create a simple multi-page website.</p>
+<p>With CSS, I was able to transform the plain structure into something more visually appealing. I experimented with background images, colors, borders, and typography to give the site personality. I also practiced using flexbox to arrange elements like my project previews and media grid. Adding hover effects, such as zooming in on images, made the site feel more interactive. Finally, I worked with media queries so the layout automatically adapts to tablets and mobile devices.</p>
+<p>Overall, I discovered how HTML defines the structure and content, while CSS controls the appearance and responsiveness. Together, they form the foundation for professional websites.
+          </p>
+        </section>
       </div>
 
-
-<!-- about me and projects -->
+      <!-- about me and projects -->
       <div class="section-row">
+        <!-- About -->
+        <section id="about">
+          <h2>About me ᯓ★</h2>
+          <img src="images/frieren.png" alt="profile picture" loading="lazy" />
+          <p class="username">Gerda Kadi Auli</p>
+          <p class="about-text">Student at Tartu Rakenduslik Kolledž</p>
+        </section>
 
-<!-- About -->
-      <section id="about">
-        <h2>About me ᯓ★</h2>
-        <img src="images/frieren.png" alt="profile picture" loading="lazy"/>
-        <p class="username">Gerda Kadi Auli</p>
-        <p>Student of Tartu Rakendusliku Kolledž</p>
-      </section>
+        <!-- Projects/Links -->
+        <section id="projects">
+          <h2>Projects ᯓ★</h2>
+          <div class="projects-container">
+            <div class="projects-item">
+              <a
+                href="https://gerdakadiauli08.wixsite.com/gerda-kadi-auli/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/portfoolio.jpg"
+                  alt="Portfolio image"
+                  loading="lazy"
+                />
+              </a>
+              <h3>Portfolio</h3>
+            </div>
 
-      <!-- Projects/Links -->
-      <section id="projects">
-        <h2>Projects ᯓ★</h2>
-        <div class="projects-container">
-          <div class="projects-item">
-            <a
-              href="https://gerdakadiauli08.wixsite.com/gerda-kadi-auli/portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="images/portfoolio.jpg"
-                alt="Portfolio image"
-                loading="lazy"
-              />
-            </a>
-            <h3>Portfolio</h3>
+            <div class="projects-item">
+              <a href="study.html">
+                <img src="images/study.jpg" alt="ava link" loading="lazy" />
+              </a>
+              <h3>Study</h3>
+            </div>
           </div>
-
-          <div class="projects-item">
-            <a href="study.html">
-              <img src="images/study.jpg" alt="ava link" loading="lazy" />
-            </a>
-            <h3>Study</h3>
-          </div>
-        </div>
-      </section>
-</div>
-
-     
+        </section>
+      </div>
 
       <!-- Contact -->
-    <section id="contact">
-  <h2>Contact Me ⭑.ᐟ</h2>
+      <section id="contact">
+        <h2>Contact Me ⭑.ᐟ</h2>
 
-  <div class="email-box">
-
-    <!-- inline SVG -->
-    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Email icon">
-      <rect width="24" height="24" fill="none"/>
-      <path d="M2 4h20v16H2z" stroke="black" fill="none"/>
-      <path d="M2 4l10 8 10-8" stroke="black" fill="none"/>
-    </svg>
-    <span>Email: gerda-kadi.auli@voco.com</span>
-  </div>
-</section>
+        <div class="email-box">
+          <!-- inline SVG -->
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Email icon"
+          >
+            <rect width="24" height="24" fill="none" />
+            <path d="M2 4h20v16H2z" stroke="black" fill="none" />
+            <path d="M2 4l10 8 10-8" stroke="black" fill="none" />
+          </svg>
+          <span>Email: gerda-kadi.auli@voco.com</span>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
